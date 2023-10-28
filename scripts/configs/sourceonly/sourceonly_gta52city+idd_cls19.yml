@@ -1,0 +1,20 @@
+DATASETS:
+  SOURCE: [GTA5,]
+  TARGET: [Cityscapes]
+  NUM_CLASSES: 19
+DATALOADER:
+  BATCH_SIZE_SOURCE: 4
+  BATCH_SIZE_TARGET: 4
+INPUT:
+  INPUT_SIZE_SOURCE: [1024, 512]
+  INPUT_SIZE_TARGET: [1024, 512]
+MODEL:
+  MODEL: DeepLabv2
+  MULTI_LEVEL: True
+  RESTORE_FROM: ../pretrained_models/DeepLab_resnet_pretrained_imagenet.pth
+DA:
+  DA_TYPE: SourceOnly
+TRAIN:
+  EARLY_STOP: 120000
+TEST:
+  INPUT_SIZE: [1024, 512]
