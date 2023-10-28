@@ -1,5 +1,5 @@
-# MTDASeg
-The Multi-Target Domain Adaptation for Semantic Segmentation.
+# Domain Adaptation via Knowledge Distillation
+Domain Adaptation via Knowledge Distillation for Semantic Segmentation.
 
 
 # Installation
